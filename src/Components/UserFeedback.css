@@ -1,0 +1,50 @@
+.feedback-container {
+    display: flex;
+    flex-direction: column; /* Align children in a column */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .cards-container {
+    display: flex; /* To display cards in a row */
+    justify-content: space-evenly; /* Evenly spaces the children within the container */
+    overflow: hidden; /* Hide overflow */
+    max-width: 960px; /* Adjust based on the total width of three cards */
+    padding: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width to center the buttons */
+  }
+  
+  /* button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+   */
+
+  /* Add this to your UserFeedback.css file or any relevant CSS file */
+button {
+  background-color: #ccc; /* Grey background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%; /* Makes the button round */
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: red; /* Red background color on hover */
+}
