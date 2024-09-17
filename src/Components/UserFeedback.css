@@ -1,50 +1,32 @@
 .feedback-container {
     display: flex;
-    flex-direction: column; /* Align children in a column */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
   }
   
-  .cards-container {
-    display: flex; /* To display cards in a row */
-    justify-content: space-evenly; /* Evenly spaces the children within the container */
-    overflow: hidden; /* Hide overflow */
-    max-width: 960px; /* Adjust based on the total width of three cards */
+  .feedback-cards-container {
+    display: flex;
+    justify-content: space-evenly; 
+    overflow: hidden; 
+    max-width: 960px; 
     padding: 20px;
   }
   
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Full width to center the buttons */
-  }
-  
-  /* button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-  }
-   */
-
-  /* Add this to your UserFeedback.css file or any relevant CSS file */
-button {
-  background-color: #ccc; /* Grey background color */
+.feedback-movement {
+  height: 50px;
+  background-color: #ccc; 
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 50%; /* Makes the button round */
+  border-radius: 50%;
   cursor: pointer;
   margin: 10px;
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  transition: background-color 0.3s; 
 }
 
-button:hover {
-  background-color: red; /* Red background color on hover */
+.feedback-movement:hover {
+  background-color: red; 
 }

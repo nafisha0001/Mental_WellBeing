@@ -2,7 +2,6 @@ import React from 'react'
 import Features from '../Components/Features'
 import UserFeedback from '../Components/UserFeedback'
 import './Home.css'
-import Footer from '../Components/Footer'
 
 function Home() {
   return (
@@ -21,7 +20,6 @@ function Home() {
       <Features />
       <h1>Happy users</h1>
       <UserFeedback />
-      <Footer />
     </div>
   )
 }
