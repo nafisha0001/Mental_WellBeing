@@ -27,11 +27,6 @@
     font-weight: 500;
 }
 
-.auth-buttons {
-    display: flex;
-    padding: 0px;
-}
-
 .login-btn, .signup-btn {
     width: 100px;
     height: 35px;
@@ -43,6 +38,7 @@
 .login-btn {
     background-color: #7297DB;
     color: white;
+    margin-right: 15px;
 }
 
 .signup-btn {

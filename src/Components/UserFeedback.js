@@ -29,14 +29,14 @@ function UserFeedback() {
     return (
         <>
             <div className="feedback-container">
-                <div className="cards-container">
+                <div className="feedback-cards-container">
                     <UserFeedbackCard {...userFeedbacks[index % userFeedbacks.length]} />
                     <UserFeedbackCard {...userFeedbacks[(index + 1) % userFeedbacks.length]} />
                     <UserFeedbackCard {...userFeedbacks[(index + 2) % userFeedbacks.length]} />
                 </div>
                 <div>
-                    <button onClick={previousFeedback}>&lt;</button>
-                    <button onClick={nextFeedback}>&gt;</button>
+                    <button className='feedback-movement' onClick={previousFeedback}>&lt;</button>
+                    <button className='feedback-movement' onClick={nextFeedback}>&gt;</button>
                 </div>
             </div>
         </>
