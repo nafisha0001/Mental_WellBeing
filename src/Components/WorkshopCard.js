@@ -48,6 +48,7 @@ function WorkshopCard({ title, price, date, image }) {
               type="email"
               placeholder="Enter your email"
               className="email-input"
+              // required
             />
 
             {/* Buttons */}
