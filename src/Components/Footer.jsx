@@ -1,6 +1,8 @@
 // Footer.js
 import React from 'react';
-import './Footer.css'; 
+import './Footer.css'; // External CSS for styling
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -43,12 +45,19 @@ const Footer = () => {
         <div className="footer-copyright">
           <p>© 2022 Brand, Inc. - <a href="/privacy">Privacy</a> - <a href="/terms">Terms</a> - <a href="/sitemap">Sitemap</a></p>
         </div>
-
-        <div className="footer-social">
-          <a href="https://twitter.com"><i className="fab fa-twitter"></i></a>
-          <a href="https://facebook.com"><i className="fab fa-facebook-f"></i></a>
-          <a href="https://linkedin.com"><i className="fab fa-linkedin-in"></i></a>
-          <a href="https://youtube.com"><i className="fab fa-youtube"></i></a>
+        <div className="footer-right">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="icon-link twitter">
+            <FontAwesomeIcon icon={faTwitter} size="1x" />
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="icon-link facebook">
+            <FontAwesomeIcon icon={faFacebook} size="1x" />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="icon-link linkedIn">
+            <FontAwesomeIcon icon={faLinkedin} size="1x" />
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="icon-link youTube">
+            <FontAwesomeIcon icon={faYoutube} size="1x" />
+          </a>
         </div>
       </div>
     </footer>
