@@ -1,5 +1,5 @@
 // AboutUsPage.js
-import React from 'react';  // Assuming you have a Footer component
+import React from 'react';  
 // import './styles.css';
 import './AboutUs.css'
 // import '../Images/AboutUsHead.png'

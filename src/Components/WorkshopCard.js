@@ -4,13 +4,28 @@ import './WorkshopCard.css';
 function WorkshopCard({ title, price, date, image }) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isSuccessDialogOpen, setIsSuccessDialogOpen] = useState(false);
+  const [email, setEmail] = useState('');
+  const [isEmailValid, setIsEmailValid] = useState(true);
 
-  const handleDialogEnrollClick = () => {
-    setIsDialogOpen(false); 
-    setIsSuccessDialogOpen(true); 
+  // Handle email input and validate it
+  const handleEmailChange = (event) => {
+    const inputEmail = event.target.value;
+    setEmail(inputEmail);
+    
+    // Basic email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setIsEmailValid(emailRegex.test(inputEmail));
   };
 
-  // Function to handle opening and closing of the dialog
+  const handleDialogEnrollClick = () => {
+    if (isEmailValid && email) {
+      setIsDialogOpen(false); 
+      setIsSuccessDialogOpen(true); 
+    } else {
+      alert('Please enter a valid email.');
+    }
+  };
+
   const handleWorkshopDialogOpen = () => {
     setIsDialogOpen(true);
   };
@@ -18,6 +33,7 @@ function WorkshopCard({ title, price, date, image }) {
   const handleWorkshopDialogClose = () => {
     setIsDialogOpen(false);
     setIsSuccessDialogOpen(false);
+    setEmail(''); // Reset email on dialog close
   };
 
   return (
@@ -37,7 +53,7 @@ function WorkshopCard({ title, price, date, image }) {
         </div>
       </div>
 
-      {/* Dialog Component */}
+      {/* Enrollment Dialog */}
       {isDialogOpen && (
         <div className="workshop-dialog-overlay">
           <div className="workshop-dialog-content">
@@ -47,19 +63,17 @@ function WorkshopCard({ title, price, date, image }) {
             <input
               type="email"
               placeholder="Enter your email"
-              className="email-input"
-              // required
+              className={`email-input ${!isEmailValid ? 'invalid-input' : ''}`}
+              value={email}
+              onChange={handleEmailChange}
+              required
             />
-
-            {/* Buttons */}
             <div className="workshop-dialog-buttons">
               <button className="dialog-cancel-button" onClick={handleWorkshopDialogClose}>Cancel</button>
-              <button className="dialog-enroll-button" onClick={handleDialogEnrollClick}>Enroll</button>
+              <button className="dialog-enroll-button" onClick={handleDialogEnrollClick} disabled={!email || !isEmailValid}>Enroll</button>
             </div>
           </div>
         </div>
-
-
       )}
 
       {/* Success Dialog */}
@@ -67,7 +81,7 @@ function WorkshopCard({ title, price, date, image }) {
         <div className="workshop-dialog-overlay">
           <div className="workshop-dialog-content">
             <h3>Successfully Enrolled</h3>
-            <button onClick={handleWorkshopDialogClose}>OK</button>
+            <button className="dialog-ok-button" onClick={handleWorkshopDialogClose}>OK</button>
           </div>
         </div>
       )}
