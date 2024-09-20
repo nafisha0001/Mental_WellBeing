@@ -89,7 +89,7 @@ function AboutUs() {
 
       
     </div>
-    <Footer />
+    
     </>
   );
 }

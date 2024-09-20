@@ -7,6 +7,7 @@ import AboutUs from './Pages/AboutUs';
 // import AboutUs from './Pages/AboutUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer';
+import BooksPage from './Pages/BooksPage';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/workshops" element={<Workshops />} />
         {/* <Route path="/professional-help" element={<ProfessionalHelp />} /> */}
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/wellness-library-books" element={<BooksPage />} />
+
       </Routes>
       <Footer />
     </Router>
