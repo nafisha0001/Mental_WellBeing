@@ -12,17 +12,4 @@ const BookComponent = ({ image, title, author }) => {
   );
 };
 
-export default BookComponent;export const booksData = [
-  {
-    title: 'Harmony of Mind',
-    author: 'Thinh Relax',
-    image: '../Images/Yoga.jpg',
-  },
-  {
-    title: 'How to Relax Your Mind',
-    author: 'Jim Brown & Sharon Ralph',
-    image: 'link_to_image2',
-  },
-  // Add more book objects here based on your data
-];
-
+export default BookComponent;

@@ -25,7 +25,7 @@ function Features() {
                 title="Meditation & Breathing"
                 description="Let each breath bring you closer to a state of calm, clarity, and well-being."
                 imageUrl={brethe}
-                target= '/wellness-library-books'
+                target= '/wellness-library-videos'
             />
             <Card 
                 title="Creative Therapy"
