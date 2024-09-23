@@ -10,10 +10,11 @@ import AboutUs from './Pages/AboutUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer';
 import BooksPage from './Pages/BooksPage';
-import VideoPlay from './Pages/VideoPlayer';
+
 import VideosPage from './Pages/VideosPage';
-import ArticlesPage from './Pages/ArticlesPage';
 import VideoPlayer from './Pages/VideoPlayer'; 
+import ArticlePage from './Pages/ArticlePage';
+import FullArticle from './Pages/FullArticle';
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
         <Route path="/wellness-library-videos" element={<VideosPage/>} />
         <Route path="/video/:id" element={<VideoPlayer />} />
         
-        <Route path="/wellness-library-article" element={<ArticlesPage/>} />
+        <Route path="/articles" element={<ArticlePage />} />
+        <Route path="/article/:id" element={<FullArticle />} />
 
       </Routes>
       <Footer />
