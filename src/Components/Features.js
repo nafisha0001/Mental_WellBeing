@@ -13,21 +13,25 @@ function Features() {
                 title="Mindful Movement"
                 description="Practice yoga and simple exercises daily to reduce stress, improve mental clarity, and boost overall health."
                 imageUrl={yoga}
+                target= '/wellness-library-books'
             />
             <Card 
                 title="Wellness Library"
                 description="Explore our collection of blogs, article, podcasts and books. Whether you're looking to learn, laugh, or unwind."
                 imageUrl={Library}
+                target= '/wellness-library-books'
             />
             <Card 
                 title="Meditation & Breathing"
                 description="Let each breath bring you closer to a state of calm, clarity, and well-being."
                 imageUrl={brethe}
+                target= '/wellness-library-videos'
             />
             <Card 
                 title="Creative Therapy"
                 description="Explore joy with cartoons, find inspiration in art videos, and let music soothe your soul."
                 imageUrl={cartoons}
+                target= '/wellness-library-books'
             />
         </div>
     );
