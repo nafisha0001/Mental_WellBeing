@@ -3,7 +3,7 @@ import Header from './Components/Header';
 import Home from './Pages/Home';
 import Workshops from './Pages/Workshops';
 import ProfessionalHelp from './Pages/ProfessionalHelp';
-
+import MindfulMovement from './Pages/MindfulMovement';
 import AboutUs from './Pages/AboutUs';
 // import ProfessionalHelp from './Pages/ProfessionalHelp';
 // import AboutUs from './Pages/AboutUs';
@@ -18,10 +18,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/workshops" element={<Workshops />} />
         <Route path="/professional-help" element={<ProfessionalHelp />} />
-        {/* <Route path="/about-us" element={<AboutUs />} /> */}
-
-        {/* <Route path="/professional-help" element={<ProfessionalHelp />} /> */}
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/mindful-movement" element={<MindfulMovement />} />
       </Routes>
       <Footer />
     </Router>

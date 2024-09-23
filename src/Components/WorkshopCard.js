@@ -17,6 +17,7 @@ function WorkshopCard({ title, price, date, image }) {
     setIsEmailValid(emailRegex.test(inputEmail));
   };
 
+  // Handle enrollment button click inside the dialog
   const handleDialogEnrollClick = () => {
     if (isEmailValid && email) {
       setIsDialogOpen(false); 
@@ -63,11 +64,13 @@ function WorkshopCard({ title, price, date, image }) {
             <input
               type="email"
               placeholder="Enter your email"
-              className={`email-input ${!isEmailValid ? 'invalid-input' : ''}`}
+              className={`email-input ${!isEmailValid && email ? 'invalid-input' : ''}`}  // Add invalid class when email is invalid
               value={email}
               onChange={handleEmailChange}
               required
             />
+            {!isEmailValid && email && <p className="error-message">Invalid email address</p>}  {/* Error message for invalid email */}
+            
             <div className="workshop-dialog-buttons">
               <button className="dialog-cancel-button" onClick={handleWorkshopDialogClose}>Cancel</button>
               <button className="dialog-enroll-button" onClick={handleDialogEnrollClick} disabled={!email || !isEmailValid}>Enroll</button>
