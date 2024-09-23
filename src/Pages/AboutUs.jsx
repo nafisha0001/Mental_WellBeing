@@ -1,6 +1,8 @@
 // AboutUsPage.js
-import React from 'react';  
+import React from 'react';
+import Footer from '../Components/Footer';  // Assuming you have a Footer component
 // import './styles.css';
+import Header from '../Components/Header';
 import './AboutUs.css'
 // import '../Images/AboutUsHead.png'
 import AboutUsHead from '../Images/AboutUsHead.png';
@@ -87,6 +89,7 @@ function AboutUs() {
 
       
     </div>
+    
     </>
   );
 }
