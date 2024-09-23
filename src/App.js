@@ -10,7 +10,7 @@ import Footer from './Components/Footer';
 import BooksPage from './Pages/BooksPage';
 import VideoPlay from './Pages/VideoPlayer';
 import VideosPage from './Pages/VideosPage';
-import ArticlePage from './Pages/ArticlePage';
+import ArticlesPage from './Pages/ArticlesPage';
 import VideoPlayer from './Pages/VideoPlayer'; 
 
 
@@ -27,7 +27,7 @@ function App() {
         <Route path="/wellness-library-videos" element={<VideosPage/>} />
         <Route path="/video/:id" element={<VideoPlayer />} />
         
-        <Route path="/wellness-library-article" element={<ArticlePage/>} />
+        <Route path="/wellness-library-article" element={<ArticlesPage/>} />
 
       </Routes>
       <Footer />

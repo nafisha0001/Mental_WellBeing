@@ -1,48 +1,4 @@
-// import React from 'react';
-// import { useParams } from 'react-router-dom';
 
-// const videosData = [
-//   {
-//     title: 'Mindfulness Meditation',
-//     videoLink: 'https://www.youtube.com/embed/abFwwbopuas?si=-9ZiLCb-_IN44YBa',
-//   },
-//   {
-//     title: 'Understanding Deep Learning',
-//     videoLink: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-//   },
-//   {
-//     title: 'React Tutorial for Beginners',
-//     videoLink: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-//   },
-//   {
-//     title: 'How to Cook Healthy Meals',
-//     videoLink: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-//   },
-// ];
-
-// const VideoPlayer = () => {
-//   const { id } = useParams(); // Get the video ID from the URL
-//   const video = videosData[id]; // Find the video based on the ID
-
-//   return (
-//     <div>
-//       <h2>{video.title}</h2>
-//       <div className="video-container">
-//         <iframe
-//           width="560"
-//           height="315"
-//           src={video.videoLink}
-//           title={video.title}
-//           frameBorder="0"
-//           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-//           allowFullScreen
-//         ></iframe>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default VideoPlayer;
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './VideoPlayer.css'
@@ -51,7 +7,7 @@ import './VideoPlayer.css'
 const videosData = [
   {
     title: 'Mindfulness Meditation',
-    videoLink: 'https://www.youtube.com/embed/abFwwbopuas?si=-9ZiLCb-_IN44YBa',
+    videoLink: 'https://www.youtube.com/embed/YRJ6xoiRcpQ',
     description: 'Learn how to practice mindfulness meditation and discover the benefits of staying present in the moment. This video guides you through simple techniques to improve your focus and mental well-being.',
   },
   {

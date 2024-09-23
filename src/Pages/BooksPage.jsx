@@ -241,7 +241,7 @@ const BooksPage = () => {
       <Link to="/wellness-library-books">
           <button className="nav-button" >Books</button> {/* Use Link to navigate */}
       </Link>
-      <Link to="/wellness-library-videos">
+      <Link to="/wellness-library-article">
            <button className="nav-button">Articles</button> {/* Use Link to navigate */}
         </Link>
         <Link to="/wellness-library-videos">
