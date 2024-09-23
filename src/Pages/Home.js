@@ -11,7 +11,7 @@ function Home() {
           <h1>Your Home for Mental Fitness</h1>
           <p className='web-des'>In every storm, there's a place of calm. Let us help you find it within yourself and shine in your own strength.</p>
           <div className="search-box">
-            <input type="text" placeholder="Search Anything" />
+            <input type="text" placeholder="Search Anything"/>
             <button>Search</button>
           </div>
         </div>

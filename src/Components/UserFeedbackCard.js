@@ -4,7 +4,7 @@ import './UserFeedbackCard.css';
 function UserFeedbackCard({ name, review, rating, imageUrl }) {
     // Create an array of stars based on the rating
     const stars = Array.from({ length: rating }, (_, index) => (
-        <span key={index} className="star">&#9733;</span> // Unicode star character
+        <span key={index} className="star">&#9733;</span> 
     ));
 
     return (
