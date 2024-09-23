@@ -12,8 +12,9 @@
   }
   
   .article-image {
-    width: 40%;
-    height: auto;
+    
+    width: 55%;
+    height: 200px;
     border-radius: 8px;
   }
   

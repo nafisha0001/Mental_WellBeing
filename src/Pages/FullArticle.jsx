@@ -3,6 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { articlesData } from '../Data/articlesData';
 import './FullArticle.css'; // Add CSS for styling the full article page
+import ReactMarkdown from 'react-markdown';
 
 const FullArticle = () => {
   const { id } = useParams();
@@ -11,7 +12,9 @@ const FullArticle = () => {
   return (
     <div className="full-article-page">
       <h1>{article.title}</h1>
-      <p>{article.fullText}</p>
+      
+      <p><ReactMarkdown>{article.fullText}</ReactMarkdown></p>
+   
       <div className="feedback-section">
         <textarea placeholder="Your feedback..." className="feedback-input"></textarea>
         <button className="submit-feedback-btn">Submit Feedback</button>

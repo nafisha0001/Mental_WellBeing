@@ -99,11 +99,17 @@ const VideosPage = () => {
     <div className="videos-page">
       {/* Navigation buttons */}
       <div className="navigation">
-        <button className="nav-button">Books</button>
-        <button className="nav-button">Articles</button>
-        <button className="nav-button">Videos</button>
+      <Link to="/wellness-library-books">
+          <button className="nav-button" >Books</button> {/* Use Link to navigate */}
+      </Link>
+      <Link to="/articles">
+           <button className="nav-button">Articles</button> {/* Use Link to navigate */}
+        </Link>
+        <Link to="/wellness-library-videos">
+          <button className="nav-button">Videos</button> {/* Use Link to navigate */}
+        </Link>
+        
       </div>
-
       <div className="videos-grid">
         {visibleVideos.map((video, index) => (
           <div key={index} className="video-item">
