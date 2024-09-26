@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './DoctorCard.css';
 import BookSessionDialog from './BookSessionDialog';
 
-function DoctorCard({ name, fees, rating, image }) {
+function DoctorCard({ name,specialization, fees, rating, image }) {
 
     const stars = Array.from({ length: rating }, (_, index) => (
         <span key={index} className="star">&#9733;</span>
@@ -22,6 +22,7 @@ function DoctorCard({ name, fees, rating, image }) {
             </div>
             <div className="doctor-card-content">
                 <h2>{name}</h2>
+                <p className='doctor-specialization'>{specialization}</p>
                 <p className='doctor-fee'>{fees}</p>
                 <div className="doctor-rating-buttons">
                     <div className="doctor-rating">{stars}</div>

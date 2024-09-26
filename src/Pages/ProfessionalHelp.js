@@ -9,22 +9,24 @@ import './ProfessionalHelp.css';
 
 function ProfessionalHelp() {
   const doctors = [
-    { name: 'Aman', fees: '1000 per hour', rating: '4', image: doc1 },
-    { name: 'Dr. Rahul', fees: '800 per hour', rating: '5', image: doc5 },
-    { name: 'Dr. Neha', fees: '950 per hour', rating: '4', image: doc3 },
-    { name: 'Dr. Priya', fees: '1100 per hour', rating: '3', image: doc4 },
-    { name: 'Dr. Sameer', fees: '900 per hour', rating: '4', image: doc2 },
-    { name: 'Dr. Aisha', fees: '850 per hour', rating: '3', image: doc4 },
-    { name: 'Dr. Kabir', fees: '950 per hour', rating: '4', image: doc5 },
-    { name: 'Dr. Meena', fees: '1000 per hour', rating: '5', image: doc3 },
-    { name: 'Dr. Ali', fees: '1200 per hour', rating: '3', image: doc1 },
+    { name: 'Aman', fees: '1000 per hour', rating: '4', image: doc1, specialization: 'Psychologist' },
+    { name: 'Dr. Rahul', fees: '800 per hour', rating: '5', image: doc5, specialization: 'Psychiatrist' },
+    { name: 'Dr. Neha', fees: '950 per hour', rating: '4', image: doc3, specialization: 'Counselor' },
+    { name: 'Dr. Priya', fees: '1100 per hour', rating: '3', image: doc4, specialization: 'Therapist' },
+    { name: 'Dr. Sameer', fees: '900 per hour', rating: '4', image: doc2, specialization: 'Clinical Psychologist' },
+    { name: 'Dr. Aisha', fees: '850 per hour', rating: '3', image: doc4, specialization: 'Child Psychologist' },
+    { name: 'Dr. Kabir', fees: '950 per hour', rating: '4', image: doc5, specialization: 'Family Therapist' },
+    { name: 'Dr. Meena', fees: '1000 per hour', rating: '5', image: doc3, specialization: 'Cognitive Behavioral Therapist' },
+    { name: 'Dr. Ali', fees: '1200 per hour', rating: '3', image: doc1, specialization: 'Neuropsychologist' }
   ];
+  
 
   return (
     <div className="professional-help-container">
       {doctors.map((doctor, index) => (
         <DoctorCard 
           key={index}
+          specialization={doctor.specialization}
           name={doctor.name}
           fees={doctor.fees}
           rating={doctor.rating}

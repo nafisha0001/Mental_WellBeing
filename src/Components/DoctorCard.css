@@ -1,6 +1,6 @@
 .doctor-card {
     width: auto;
-    height: 350px;
+    height: 380px;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
@@ -30,7 +30,7 @@
     align-items: stretch;
   }
 
-  .doctor-fee{
+  .doctor-fee, .doctor-specialization{
     color: #666;
     font-size: 1em;
   }

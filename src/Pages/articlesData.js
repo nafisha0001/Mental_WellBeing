@@ -17,3 +17,4 @@ const articlesData = [
     }
   ];
   
+  export default articlesData;

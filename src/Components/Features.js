@@ -13,7 +13,7 @@ function Features() {
                 title="Mindful Movement"
                 description="Practice yoga and simple exercises daily to reduce stress, improve mental clarity, and boost overall health."
                 imageUrl={yoga}
-                target= '/wellness-library-books'
+                target= '/mindful-movement'
             />
             <Card 
                 title="Wellness Library"

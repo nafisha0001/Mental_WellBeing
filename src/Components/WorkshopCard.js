@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './WorkshopCard.css';
 
-function WorkshopCard({ title, price, date, image }) {
+function WorkshopCard({ title, price, date, image, description }) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isSuccessDialogOpen, setIsSuccessDialogOpen] = useState(false);
+  const [isDetailsDialogOpen, setIsDetailsDialogOpen] = useState(false);
   const [email, setEmail] = useState('');
   const [isEmailValid, setIsEmailValid] = useState(true);
 
@@ -37,6 +38,16 @@ function WorkshopCard({ title, price, date, image }) {
     setEmail(''); // Reset email on dialog close
   };
 
+  // Handle "View Details" button click
+  const handleDetailsDialogOpen = () => {
+    setIsDetailsDialogOpen(true);
+  };
+
+  // Close the "View Details" dialog
+  const handleDetailsDialogClose = () => {
+    setIsDetailsDialogOpen(false);
+  };
+
   return (
     <>
       <div className="workshop-card">
@@ -49,7 +60,7 @@ function WorkshopCard({ title, price, date, image }) {
           <p className='workshop-details'>{date}</p>
           <div className="workshop-card-buttons">
             <button className="workshop-enroll-button" onClick={handleWorkshopDialogOpen}>Enroll</button>
-            <button className="workshop-details-button">View Details</button>
+            <button className="workshop-details-button" onClick={handleDetailsDialogOpen}>View Details</button>
           </div>
         </div>
       </div>
@@ -85,6 +96,17 @@ function WorkshopCard({ title, price, date, image }) {
           <div className="workshop-dialog-content">
             <h3>Successfully Enrolled</h3>
             <button className="dialog-ok-button" onClick={handleWorkshopDialogClose}>OK</button>
+          </div>
+        </div>
+      )}
+
+      {/* Details Dialog */}
+      {isDetailsDialogOpen && (
+        <div className="workshop-dialog-overlay">
+          <div className="workshop-dialog-content details-dialog">
+            <button className="close-dialog-button" onClick={handleDetailsDialogClose}>✖</button>
+            <h3>Workshop Details</h3>
+            <p>{description}</p>
           </div>
         </div>
       )}

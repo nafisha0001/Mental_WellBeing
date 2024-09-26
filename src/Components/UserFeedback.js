@@ -5,8 +5,8 @@ import user from '../Images/user.png'
 
 const userFeedbacks = [
     { name: 'Gabriele H.', review: 'WellMind transformed my approach to mental health.', rating: 5, imageUrl: user },
-    { name: 'Georgie B.', review: 'Incredible app for mental wellness and support.', rating: 5, imageUrl: user },
-    { name: 'Alex T.', review: 'A must-have app for mental health awareness.', rating: 4, imageUrl: user },
+    { name: 'Sunio', review: 'Incredible app for mental wellness and support.', rating: 5, imageUrl: user },
+    { name: 'jian', review: 'A must-have app for mental health awareness.', rating: 4, imageUrl: user },
     { name: 'Tom', review: 'WellMind transformed my approach to mental health.', rating: 5, imageUrl: user },
     { name: 'Jerry', review: 'Incredible app for mental wellness and support.', rating: 5, imageUrl: user },
     { name: 'Nobita', review: 'A must-have app for mental health awareness.', rating: 4, imageUrl: user },
