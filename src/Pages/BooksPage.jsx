@@ -8,7 +8,7 @@ const booksData = [
     title: 'Harmony of Mind',
     author: 'Thinh Relax',
     image: require('../Images/book1.png'),
-    readLink: 'https://link-to-online-book.com/harmony-of-mind'
+    readLink: 'https://reader.bookfusion.com/books/1216743-can-music-make-you-sick?type=epub'
   },
   {
     title: 'Five People You Meet in Heaven',

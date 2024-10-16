@@ -31,7 +31,7 @@ function Features() {
                 title="Creative Therapy"
                 description="Explore joy with cartoons, find inspiration in art videos, and let music soothe your soul."
                 imageUrl={cartoons}
-                target= '/wellness-library-books'
+                target= '/creative-theraphy-page-cartoon'
             />
         </div>
     );
