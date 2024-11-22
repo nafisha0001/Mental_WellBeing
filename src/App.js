@@ -79,8 +79,8 @@ function App() {
 
         <Route path="/meditation" element={<Meditation />} />
         <Route path="/calm-breathing" element={<CalmBreating />} />
-        <Route path="/articles" element={<ArticlePage />} />
-        <Route path="/article/:id" element={<FullArticle />} />
+        {/* <Route path="/articles" element={<ArticlePage />} /> */}
+        {/* <Route path="/article/:id" element={<FullArticle />} /> */}
         <Route path="/meditation-video/:id" element={<MeditationVideo />} />
 
       </Routes>
