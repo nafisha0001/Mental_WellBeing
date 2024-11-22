@@ -35,8 +35,8 @@ import ArtOpenPage from './Pages/ArtOpenPage';
 
 
 
-import ArticlePage from './Pages/ArticlePage';
-import FullArticle from './Pages/FullArticle';
+// import ArticlePage from './Pages/ArticlePage';
+// import FullArticle from './Pages/FullArticle';
 import Meditation from './Pages/Meditation';
 import CalmBreating from './Pages/CalmBreathing';
 import MeditationVideo from './Pages/MeditationVideo';
@@ -79,8 +79,8 @@ function App() {
 
         <Route path="/meditation" element={<Meditation />} />
         <Route path="/calm-breathing" element={<CalmBreating />} />
-        <Route path="/articles" element={<ArticlePage />} />
-        <Route path="/article/:id" element={<FullArticle />} />
+        {/* <Route path="/articles" element={<ArticlePage />} /> */}
+        {/* <Route path="/article/:id" element={<FullArticle />} /> */}
         <Route path="/meditation-video/:id" element={<MeditationVideo />} />
 
       </Routes>

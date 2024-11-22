@@ -130,7 +130,7 @@
 .contact-form button {
     width: 100%;
     padding: 10px;
-    background-color: #6688ff; /* Adjust to match the button color */
+    background-color: var(--secondary-color); /* Adjust to match the button color */
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -139,11 +139,11 @@
 }
 
 .contact-form button:hover {
-    background-color: #5577ff; /* Slight hover effect */
+    background-color: var(--primary-color); /* Slight hover effect */
 }
 
 .contact-form input:focus, 
 .contact-form textarea:focus {
-    border-color: #5577ff; /* Focus effect */
+    border-color: var(--primary-color); /* Focus effect */
     outline: none;
 }
