@@ -65,8 +65,8 @@ function App() {
 
 
         
-        <Route path="/articles" element={<ArticlePage />} />
-        <Route path="/article/:id" element={<FullArticle />} />
+        {/* <Route path="/articles" element={<ArticlePage />} />
+        <Route path="/article/:id" element={<FullArticle />} /> */}
         <Route path="/creative-theraphy-page-cartoon" element={<CreativeTherapy1/>} />
         <Route path="/creative-theraphy-video-player" element={<CreativeTherapyVideoPlayer/>} />
         <Route path="/creative-theraphy-page-music-player" element={<MusicPlayer/>} />
