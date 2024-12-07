@@ -1,10 +1,9 @@
 // AboutUsPage.js
 import React from 'react';
- // Assuming you have a Footer component
-// import './styles.css';
+
 
 import './AboutUs.css'
-// import '../Images/AboutUsHead.png'
+
 import AboutUsHead from '../Images/AboutUsHead.png';
 import teampic from '../Images/teampic.png';
 function AboutUs() {
@@ -13,13 +12,7 @@ function AboutUs() {
     <div className="about-us-page">
 
       {/* About Content */}
-      {/* <section className="hero">
-        <img src= {AboutUsHead} alt="About Us" className='headImg' />
-        <div className="hero-text">
-          <h1>About Us</h1>
-          <p>Our goal is to provide resources to help people take control of their mental health and well-being.</p>
-        </div>
-      </section> */}
+     
       <section className="about-content">
       <img src= {AboutUsHead} alt="About Us" className='headImg' />
         <div className="section">
@@ -62,18 +55,7 @@ function AboutUs() {
       {/* Contact Form */}
       
 
-      {/* <section className="contact-form">
-        <h2>Contact Us</h2>
-        <div className='contact-form-div'>
-            <form>
-                <input type="text" name="name" placeholder="Enter your Name" required />
-                <input type="email" name="email" placeholder="Enter your email" required />
-                <textarea name="query" placeholder="Enter your Query" required></textarea>
-                <button type="submit">Send Query</button>
-            </form>
-        </div>
-        
-      </section> */}
+     
     <section className="contact-form">
     <h2>Contact Us</h2>
     <div className="contact-form-div">
